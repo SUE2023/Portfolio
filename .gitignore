@@ -1,2 +1,6 @@
 ReactREADME.md
 Progress.md
+node_modules/
+build/
+.env
+.DS_Store
