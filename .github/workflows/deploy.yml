@@ -1,9 +1,9 @@
-name: Deploy React App to GitHub Pages
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # or dev, depending on your main working branch
+      - main
 
 jobs:
   build-and-deploy:
@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # 🟢 This line is important!
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
